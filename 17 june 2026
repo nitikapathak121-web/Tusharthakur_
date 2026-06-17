@@ -37,3 +37,32 @@ public class Main {
         System.out.println(steps);
     }
 }
+
+...................................................................................................................................................................
+
+import java.util.*;
+
+public class Game {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt(); 
+        int turn = 0;
+
+        while (turn < 10) {
+
+           
+            if (n % 3 == 0) {
+                System.out.println("A wins");
+                return;
+            }
+
+           
+            n = n + 1; 
+            turn++;
+        }
+
+     
+        System.out.println("B wins");
+    }
+}
